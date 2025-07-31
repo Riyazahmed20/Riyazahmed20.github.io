@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me – Riyazuddin Ahmed</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: linear-gradient(to right, #141e30, #243b55);
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --text-color: #fff;
+      --highlight-color: #00ffff;
+      --card-shadow: rgba(0, 0, 0, 0.6);
+    }
+
+    .light-mode {
+      --bg-color: #f0f0f0;
+      --card-bg: #ffffff;
+      --text-color: #333;
+      --highlight-color: #007bff;
+      --card-shadow: rgba(0, 0, 0, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px var(--card-shadow);
+      backdrop-filter: blur(10px);
+      max-width: 800px;
+      width: 100%;
+      animation: fadeIn 1.5s ease-out;
+      transition: transform 0.4s ease, background 0.4s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
+      box-shadow: 0 12px 40px var(--highlight-color);
+    }
+
+    h1 {
+      font-size: 2.7rem;
+      color: var(--highlight-color);
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 300;
+      margin-bottom: 25px;
+      color: var(--text-color);
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      color: var(--highlight-color);
+      font-weight: 600;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--highlight-color);
+      border-bottom: 1px solid #00ffff50;
+      padding-bottom: 5px;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid var(--highlight-color);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      color: var(--text-color);
+      border: 2px solid var(--highlight-color);
+      padding: 10px 18px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: var(--highlight-color);
+      color: #000;
+    }
+
+    .toggle-mode {
+      margin-top: 20px;
+      background: none;
+      border: 2px solid var(--highlight-color);
+      padding: 8px 16px;
+      color: var(--text-color);
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .toggle-mode:hover {
+      background: var(--highlight-color);
+      color: #000;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 25px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://via.placeholder.com/130" alt="Profile Picture" class="profile-img" />
+    <h1>Hello, I'm <span class="highlight">Mohd. Riyazuddin Ahmed</span></h1>
+    <h2>From Machines to Models: A Mechanical Engineer’s Journey into AI & Data Science</h2>
+
+    <p>I hold a <span class="highlight">B.Tech in Mechanical Engineering</span> and recently completed a <span class="highlight">Post Graduate Diploma in Artificial Intelligence</span> from CDAC Guwahati.</p>
+
+    <p>Professionally, I have worked as an <span class="highlight">Administration Associate</span> at GNRC and as <span class="highlight">Assistant Executive (Customer Support)</span> at iEnergizer IT Services Pvt. Ltd.</p>
+
+    <p>My key academic project, <span class="highlight">AI Dungeon Master</span>, integrates NLP, machine learning, and storytelling into an interactive game format powered by AI.</p>
+
+    <p>I’m now actively seeking roles as a <span class="highlight">Data Analyst</span> or <span class="highlight">AI/ML Engineer</span>, where I can contribute to innovative solutions and data-driven decisions.</p>
+
+    <div class="section-title">Educational Background</div>
+    <ul>
+      <li><span class="highlight">10th:</span> Kendriya Vidyalaya No.1, AF Pathankot</li>
+      <li><span class="highlight">12th:</span> Kendriya Vidyalaya No.1, AF Pathankot</li>
+      <li><span class="highlight">B.Tech (Mechanical Engineering):</span> Jaipur National University</li>
+    </ul>
+
+    <div class="section-title">Projects</div>
+    <ul>
+      <li><span class="highlight">Professional Project:</span> EA Sports and Roblox</li>
+      <li><span class="highlight">Academic Project:</span> Forced Convection Water Cooling System</li>
+      <li><span class="highlight">PGDAI Minor Project:</span> Time Series Forecasting with PyTorch</li>
+      <li><span class="highlight">PGDAI Minor Project:</span> Image Classification with Convolutional Neural Networks</li>
+      <li><span class="highlight">PGDAI Major Project:</span> AI Dungeon Master</li>
+    </ul>
+
+    <div class="buttons">
+      <a href="https://www.linkedin.com/in/mohd-riyazuddin-ahmed-3266ab10b/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Riyazahmed20" target="_blank">GitHub</a>
+      <a href="https://drive.google.com/file/d/1kefpkYV4UWBNrl4yRGKXoX29w2EMa1YJ/view?usp=sharing" target="_blank">Download Resume</a>
+    </div>
+
+    <button class="toggle-mode" onclick="toggleMode()">Toggle Light/Dark Mode</button>
+  </div>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("light-mode");
+    }
+  </script>
+</body>
+</html>
